@@ -1,0 +1,3 @@
+﻿  konsola.cpp
+C:\Users\mateu\OneDrive\Pulpit\school\school\inf.04\inf04-cz23-2\konsola\konsola\konsola.cpp(29,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  konsola.vcxproj -> C:\Users\mateu\OneDrive\Pulpit\school\school\inf.04\inf04-cz23-2\konsola\x64\Debug\konsola.exe

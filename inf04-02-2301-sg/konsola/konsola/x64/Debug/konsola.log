@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1092,5): error MSB6006: "link.exe" exited with code 1168.
+LINK : fatal error LNK1168: cannot open C:\Users\mateu\OneDrive\Pulpit\school\school\inf.04\inf04-02-2301-sg\konsola\x64\Debug\konsola.exe for writing

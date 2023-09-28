@@ -1,0 +1,40 @@
+﻿<Window x:Class="desktopowa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:desktopowa"
+        mc:Ignorable="d"
+        Title="Nadaj Przesyłkę, PESEL: 00000000000" SizeToContent="WidthAndHeight" >
+    <StackPanel Margin="20">
+        <UniformGrid Columns="2" >
+
+            <StackPanel>
+                <GroupBox Header="Rodzaj paczki" Width="Auto" x:Name="type" >
+                    <StackPanel>
+                        <RadioButton GroupName="type"  Content="Pocztówka" IsChecked="True" Checked="changeCurrent"/>
+                        <RadioButton GroupName="type" Content="List" Checked="changeCurrent"/>
+                        <RadioButton GroupName="type" Content="Paczka" Checked="changeCurrent"/>
+                    </StackPanel>
+                </GroupBox>
+                <Button Content="Sprawdź cenę" Click="checkPrice"/>
+                <StackPanel Orientation="Horizontal">
+                    <Image x:Name="image" Source="/pocztowka.png" Stretch="None" />
+                    <TextBlock x:Name="price" FontWeight="Bold" FontSize="24" Text="Cena: " Padding="50"/>
+                </StackPanel>
+            </StackPanel>
+
+            <GroupBox Header="Dane adresowe" >
+                <StackPanel>
+                    <Label Content="Ulica z numerem"/>
+                    <TextBox x:Name="street" />
+                    <Label Content="Kod pocztowy"/>
+                    <TextBox x:Name="zipCode" />
+                    <Label Content="Miasto"/>
+                    <TextBox x:Name="city" />
+                </StackPanel>
+            </GroupBox>
+        </UniformGrid>
+        <Button Content="Zatwierdź" Click="submit"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,17 @@
+<div>
+  <form (ngSubmit)="submited()">
+    <label>Tytuł filmu</label>
+    <input type="text" class="form-control" name="title" [(ngModel)]="form.tytul">
+
+    <label>Rodzaj</label>
+    <select class="form-control" name="category" [(ngModel)]="form.kategoria">
+      <option disabled selected></option>
+      <option value="1">Komedia</option>
+      <option value="2">Obyczajowy</option>
+      <option value="3">Sensacyjny</option>
+      <option value="4">Horror</option>
+    </select>
+    <br>
+    <button type="submit" class="btn btn-primary">Dodaj</button>
+  </form>
+</div>
